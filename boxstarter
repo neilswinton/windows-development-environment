@@ -6,9 +6,9 @@ Update-ExecutionPolicy Unrestricted
 cinst -y Microsoft-Hyper-V-All -source windowsFeatures
 
 # Packages
-cinst -y cmder -pre
-cinst -y hyper
-cinst -y Gow
+# cinst -y cmder -pre
+# cinst -y hyper
+# cinst -y Gow
 
 ## Node, npm
 cinst -y nodejs.install
@@ -24,21 +24,22 @@ cinst -y nodejs.install
 npm install -g npm-windows-upgrade
 
 ## Editors
-cinst -y visualstudiocode
+# cinst -y visualstudiocode
 
 ## Visual Studio 2015
-cinst -y visualstudio2015community
+# cinst -y visualstudio2015community
 if (Test-PendingReboot) { Invoke-Reboot }
 
 ## Ruby, Go, Python
-cinst -y ruby
-cinst -y ruby.devkit
+# cinst -y ruby
+# cinst -y ruby.devkit
 
-cinst -y golang
+# cinst -y golang
 
 cinst -y python
 cinst -y pip
 cinst -y easy.install
+cinst -y pycharm-community
 
 if (Test-PendingReboot) { Invoke-Reboot }
 
