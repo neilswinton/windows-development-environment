@@ -55,6 +55,10 @@ cinst -y DotNet3.5
 # cinst -y PowerShell -- not needed on windows 10
 if (Test-PendingReboot) { Invoke-Reboot }
 
+# Crypto
+cinst -y veracrypt
+
+
 # Pinning Things
 Install-ChocolateyPinnedTaskBarItem "$env:programfiles\Google\Chrome\Application\chrome.exe"
 
